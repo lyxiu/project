@@ -1,0 +1,17 @@
+/* CSS Document */
+  * {
+            width: 1000px;
+            height: 1000px;
+        }
+
+        #img {
+            position: relative;
+            /*当设置为absolute时，图片从流中消失，body会塌陷，可能会导致图片无法移动，但是给body设置宽高就OK了*/
+            width: 200px;
+            height: 200px;
+        }
+
+        #main {
+            border: 1px solid black;
+        }
+

@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>知识互动-选择</title>
+<style type="text/css">
+	
+	#d12{
+		height: 620px;
+	    width: 1000px;
+		margin: 0 auto;
+		position: relative;
+		background-image:url(images/z004.png);
+	    background-position: 1000px 620px;
+
+	}
+	.content{
+		position:relative;
+		left: 10%;
+		top: 10%;
+		
+	}
+	#fanhui03{
+		width: 450px;
+		height: 30px;
+		position: absolute;
+		bottom: 10%;;
+		right: 2%;
+		font-size: 25px;
+		text-align: center;
+		float: right;
+		text-align: center;
+		font-size: 25px;
+		line-height: 35px;
+		margin-top: 5px;
+	}
+	.mini{
+		width: 18%;
+		margin-bottom: -7px;
+	}
+	.return{
+		float: right;
+		width: 100px;
+		background-color: darkgray;
+		border: solid;
+		border-color: dimgrey;
+		color: black;
+	}
+	.return:hover{
+		width: 150px;
+	}
+	.next{
+		float: right;
+		width: 100px;
+		background-color: darkgray;
+		border: solid;
+		border-color: dimgrey;
+		color: black;
+	}
+	.next:hover{
+		width: 150px;
+	}
+	a{text-decoration: none;}
+	a:link {color:#000000;}      /* 未访问链接*/
+	a:visited {color:#000000;}  /* 已访问链接 */
+	a:hover {color:#FFFFFF;}  /* 鼠标移动到链接上 */
+	a:active {color:#FFFFFF;} 
+	.ul1 li,.ul2 li{
+		list-style-type: none;
+	}
+	#content{
+		width: 800px;
+		height: 500px;
+		left: 8%;
+		font-size: 25px;
+		font-family: "楷体";
+		
+		line-height: 30px;
+		position: absolute;
+	}
+	.title{
+		position: absolute;
+		font-size: 30px;
+		font-weight: bold;
+		top: 13%;
+		line-height: 45px;
+	}
+	.c1{
+		position: absolute;
+		top: 35%;
+	}
+	.c2{
+		position: absolute;
+		top: 50%;
+	}
+	.c3{
+		position: absolute;
+		top: 65%;
+	}
+	.c4{
+		position: absolute;
+		top: 80%;
+	}
+	.sub{
+		position: absolute;
+		top: 90%;
+	}
+</style>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script>
+	$(document).ready(function () {
+
+    $("#submit").click(function () {
+        var i=0;
+        var li1='C';
+
+        var choice1=$('input:radio:checked').eq(0).val();
+        
+        if (li1!=choice1){
+            
+			alert("很遗憾，回答错误！");
+        }
+		else{
+			alert("恭喜你，回答正确！");
+		}
+      
+        
+
+    });
+
+
+    $("#look").click(function () {
+        $(".ul1").css("display","none");
+        $(".ul2").css("display","block");
+    });
+
+    $("#back").click(function () {
+        $(".ul2").css("display","none");
+        $(".ul1").css("display","block");
+    });
+
+
+});
+
+
+
+</script>
+</head>
+
+<body>
+<div id="d12">
+		<div id="content">
+		<ul class="ul1">
+                    <li style="margin-top: 50px;">
+                        <div class="title">第②题&nbsp;&nbsp;下列哪一句诗描写的场景最适合采用水墨画来表现?( )
+<br></div>
+                        <div class="c1"><input type="radio" name="a1" value="A" class="a1"><span class="span1"> A．落霞与孤鹜齐飞,秋水共长天一色</span><br></div>
+                        <div class="c2"><input type="radio" name="a1" value="B" class="a1"><span class="span1"> B．返景入深林,复照青苔上</span><br></div>
+                        <div class="c3"><input type="radio" name="a1" value="C" class="a1"><span class="span1"> C．孤舟蓑笠翁,独钓寒江雪</span><br></div>
+                        <div class="c4"><input type="radio" name="a1" value="D" class="a1"><span class="span1"> D．接天莲叶无穷碧,映日荷花别样红</span></div>
+                    </li><br><br>
+                     <div class="sub"><input type="submit" value="提交" class="button" id="submit">
+                     <a href="#" id="look">查看答案</a></div>
+        </ul>
+		<ul class="ul2">
+                    <li style="margin-top: 50px;">
+                        <div class="title">第②题&nbsp;&nbsp;下列哪一句诗描写的场景最适合采用水墨画来表现?(<span class="red">C</span>)<br></div>
+                        <div class="c1"><input type="radio" name="a1" value="A" class="a1"><span class="span1"> A．落霞与孤鹜齐飞,秋水共长天一色</span><br></div>
+                        <div class="c2"><input type="radio" name="a1" value="B" class="a1"><span class="span1"> B．返景入深林,复照青苔上</span><br></div>
+                        <div class="c3"><input type="radio" name="a1" value="C" class="a1"><span class="span1"> C．孤舟蓑笠翁,独钓寒江雪</span><br></div>
+                        <div class="c4"><input type="radio" name="a1" value="D" class="a1"><span class="span1"> D．接天莲叶无穷碧,映日荷花别样红。</span></div>
+                    </li><br><br>
+                    <div class="sub"><input type="submit" value="返回" class="button" id="back"></div>
+
+        </ul>
+	</div>
+	<div id="fanhui03">
+	<img src="images/ks.png" class="mini">
+	<div class="next"><a href="cultural.html">上一题</a></div>
+	<div class="next"><a href="cultural03.html">下一题</a></div>
+	<div class="return"><a href="practice.html" title="return">返回</a></div>
+	</div>
+	</div>
+</body>
+</html>
