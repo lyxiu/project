@@ -3,6 +3,14 @@
 <head>
 <meta charset="utf-8">
 <title>诗词赏析之水调歌头</title>
+<script language="javascript"> 
+function changeColor(){ 
+var color="#C9886E|#659F7C"; 
+color=color.split("|"); 
+document.getElementById("ks1").style.color=color[parseInt(Math.random() * color.length)]; 
+} 
+setInterval("changeColor()",300); 
+</script>
 <style type="text/css">
 	h1{
 		font-family: "华文行楷";
@@ -15,7 +23,7 @@
 		font-size: 20px;
 	}
 #sy{
-	background:url(sc/sy_bg.jpg)no-repeat;
+	background:url(sc/sybg.jpg)no-repeat;
 	width:1000px;
 	height:620px; 
 	margin: 0 auto;
@@ -24,12 +32,12 @@
 #bt{
 		background:url(sc/bt.png) no-repeat;
 		position: relative;	
-		width:439px;
-	    height: 203px;
-     	margin: 0 auto;
+		width:445px;
+	    height: 158px;
+        margin: 0 auto;
 	    top: 200px;
 	}
-#ks{
+#ks a img{
 		position: absolute;
 		float: right;
 		bottom: 0;
@@ -37,20 +45,21 @@
 		width: auto;
 		height: auto;
 	}
+	#ks a img:hover{
+		width:200px;
+		height:140px;
+	}
 	#ks1{
 		position: absolute;
 		float: right;
-		bottom:-15px;
+		bottom:5px;
 		right: 0;
+		font-size:16px;
+		font-family:"幼圆";
+		font-weight:bolder;
+		color:#000000;
 	}
 	</style>
-<script type="text/javascript">
-	 function move1(x)
-	{
-
-		
-    }
-</script>
 </head>
 <body>
 <div id="sy">
@@ -59,15 +68,9 @@
 	<div id="ks">
 	<a href="ml.html"><img src="sc/ks.png"></a>
 	<div id="ks1">
-	<h4><a>点我点我！</a></h4>	
+	点我点我！
 	</div>
 	</div>
 	</div>
-	<script type="text/javascript">
-	sy.onmousemove=function()
-	{
-		this.style.cursor='url(scc/cursor.ico),auto';
-	}
-	</script>
 </body>
 </html>

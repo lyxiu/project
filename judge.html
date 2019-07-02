@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>知识互动-判断</title>
-<script src="js/jquery-3.2.1.min.js"></script>
+
 <style type="text/css">
 	
 	#d11{
@@ -17,7 +17,7 @@
 	.content{
 		position:relative;
 		left: 10%;
-		top: 10%;
+		top: 5%;
 		
 	}
 	#fanhui01{
@@ -76,104 +76,93 @@
 	}
 	.t2{
 		position: absolute;
-		top: 30%;
+		top: 25%;
 	}
 	.t3{
 		position: absolute;
-		top: 50%;
+		top: 45%;
 	}
 	.t4{
 		position: absolute;
-		top: 70%;
+		top: 65%;
 	}
 	.t5{
 		position: absolute;
-		top: 90%;
+		top: 85%;
 	}
 	.tr1{
 		position: absolute;
-		top: 20%;
+		top: 18%;
 	}
 	.tr2{
 		position: absolute;
-		top: 42%;
+		top: 38%;
 	}
 	.tr3{
 		position: absolute;
-		top: 60%;
+		top: 58%;
+		
 	}
 	.tr4{
 		position: absolute;
-		top: 80%;
+		top: 78%;
 	}
 	.tr5{
 		position: absolute;
-		top: 100%;
+		top: 98%;
 	}
 	
 	.sub{
 		position: absolute;
-		top: 110%;
+		top: 100%;
 		left: 40%;
 	}
 </style>
+<script src="js/jquery-3.2.1.min.js"></script>
 <script>
 	$(document).ready(function () {
-
+		$(".ul2").css("display","none");
+        $(".ul1").css("display","block");
     $("#submit").click(function () {
         var i=0;
-        var a1='月有阴晴圆缺';
-		var a2='幽壑鱼龙悲啸';
-		var a3='涌起白银阙';
-		var a4='长剑倚天谁问';
-		var a5='夷甫诸人堪笑';
-		var a6='山色有无中';
-		var a7='韵悠悠';
+        var x1='f';
+		var x2='t';
+		var x3='f';
+		var x4='f';
+		var x5='t';
 
-        var choice1=$("input#as1").eq(0).val();
-        var choice2=$("input#as2").eq(1).val();
-        var choice3=$("input#as3").eq(2).val();
-        var choice4=$("input#as4").eq(3).val();
-        var choice5=$("input#as5").eq(4).val();
-        var choice6=$("input#as6").eq(5).val();
-        var choice7=$("input#as7").eq(6).val();
+        var choice1=$('input:radio:checked').eq(0).val();
+        var choice2=$('input:radio:checked').eq(1).val();
+        var choice3=$('input:radio:checked').eq(2).val();
+        var choice4=$('input:radio:checked').eq(3).val();
+        var choice5=$('input:radio:checked').eq(4).val();
         
-        if (a1!=choice1){
+        if (x1!=choice1){
             
             i++;
 			
         }
-		if (a2!=choice2){
+		if (x2!=choice2){
             
             i++;
 			
         }
-		if (a3!=choice3){
+		if (x3!=choice3){
             
             i++;
 			
         }
-		if (a4!=choice4){
+		if (x4!=choice4){
             i++;
 			
         }
-		if (a5!=choice5){
-            
-            i++;
-			
-        }
-		if (a6!=choice6){
-            
-            i++;
-			
-        }
-		if (a7!=choice7){
+		if (x5!=choice5){
             
             i++;
 			
         }
 		
-        alert("正确题数"+(7-i)+","+"错误题数"+i);
+        alert("正确题数:"+(5-i)+","+"错误题数"+i);
 
     });
 
@@ -202,23 +191,23 @@
 	
 	<ul class="ul1">
                     <li>
-                        <div class="t1">1.在《水调歌头·黄州快哉亭赠张偓佺》中“长记平山堂上”五句，把眼前的平山堂与快哉亭融为一体，高远空濛，构成一种优美独特的意境。<br></div>
+                        <div class="t1">1.在《水调歌头·黄州快哉亭赠张偓佺》中“长记平山堂上”五句，把眼前的平山堂与快哉亭融为一体，高远空濛，构成一种优美独特的意境。<input type="radio" name="x1" value="t" class="x1"><span>√</span><input type="radio" name="x1" value="f" class="x1"><span>×</span><br></div>
                        
                     </li><br><br>
                     <li>
-                        <div class="t2">2.在《水调歌头·中秋》中，此词写中秋之夜，作者选取的代表性意象有：砧声、秋风、蟋蟀、美酒、明月、玉笛、江流等。<br></div>
+                        <div class="t2">2.在《水调歌头·中秋》中，此词写中秋之夜，作者选取的代表性意象有：砧声、秋风、蟋蟀、美酒、明月、玉笛、江流等。<input type="radio" name="x2" value="t" class="x2"><span>√</span><input type="radio" name="x2" value="f" class="x2"><span>×</span><br></div>
                         
                     </li><br><br>
                     <li>
-                        <div class="t3">3.<br></div>
+                        <div class="t3">3.《水调歌头·金山观月》的作者张孝祥是南宋词人，字安国，号于湖居士，其词风格豪迈，颇有感怀时事之作。其代表作品有：《定风波》《于湖词》。<input type="radio" name="x3" value="t" class="x3"><span>√</span><input type="radio" name="x3" value="f" class="x3"><span>×</span><br></div>
                         
                     </li><br><br>
                     <li>
-                        <div class="t4">4.<br></div>
+                        <div class="t4">4.在《水调歌头·明月几时有》中，词人因思念亲人而夜不成寐的诗句是：人有悲欢离合，月有阴晴圆缺，此事古难全。<input type="radio" name="d" value="x4" class="d"><span>√</span><input type="radio" name="d" value="f" class="x4"><span>×</span><br></div>
                         
                     </li><br><br>
                     <li>
-                        <div class="t5">5.<br></div>
+                        <div class="t5">5.在《水调歌头·送杨民瞻》中，“黄鸡白酒”语出李白《南陵别儿童入京》诗：“白酒新熟山中归，黄鸡啄黍秋正肥。”<input type="radio" name="x5" value="t" class="x5"><span>√</span><input type="radio" name="x5" value="f" class="x5"><span>×</span><br></div>
                         
                     </li><br><br>
                     
@@ -233,13 +222,13 @@
                         <div class="tr2">答案2:正确。<br></div> 
                     </li><br><br>
                     <li>
-                        <div class="tr3">答案3:<br></div>
+                        <div class="tr3">答案3:错误。《定风波》是北宋词人苏轼的代表作。<br></div>
                     </li><br><br>
                     <li>
-                        <div class="tr4">答案4:<br></div> 
+                        <div class="tr4">答案4:错误。因思念亲人而夜不成寐的诗句是：转朱阁，低绮户，照无眠。<br></div> 
                     </li><br><br>
                     <li>
-                        <div class="tr5">答案5:<br></div> 
+                        <div class="tr5">答案5:正确。<br></div> 
                     </li><br><br>
                    
                     <div class="sub"><input type="submit" value="返回" class="button" id="back"></div>
