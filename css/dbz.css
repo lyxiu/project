@@ -21,25 +21,25 @@
 	display: inline-block;
 	}
 #c1 ul li a{
-	color: #51535B;
-	font-family: "华文楷体";
+	color: black;
+	font-family: '华文楷体';
 	font-size: 32px;
 	text-decoration: none;	
 	}
 #c1 ul li a:hover
 {
-	color:rgba(180,114,115,1.00);
+	color:#4B7088;
 }
 #c2{
 	width: 240px;
 	height: 300px;
-	top: 120px;
+	top: 140px;
 	float: left;
 	position:relative;
 	text-align: center;
 	}
 #c2 ul{
-	background: rgba(159,153,153,0.5);
+	background: rgba(140,181,189,0.30);
 	margin: 0;
 	padding: 0;
 	text-align: left;
@@ -48,18 +48,18 @@
 #c2 ul li{
 	
 	width: 240px;
-	line-height: 35px;
-	text-align: left;
+	line-height: 38px;
+	text-align: center;
 	}
 #c2 ul li a{
-	color: #51535B;
+	color: black;
 	font-family: "华文楷体";
 	font-size: 20px;
 	text-decoration: none;	
 	}
 #c2 ul li a:hover
 {
-	color:rgba(180,114,115,1.00);
+	color:#4B7088;
 }
 #c3{
 	width:700px;
@@ -82,14 +82,14 @@
 	text-align: center;
 	}
 #c3 ul li a{
-	color: #51535B;
+	color:black;
 	font-family: "华文楷体";
 	font-size: 25px;
 	text-decoration: none;	
 	}
 #c3 ul li a:hover
 {
-	color:rgba(180,114,115,1.00);
+	color:#4B7088;
 }
 	#c4{
 		width: 500px;
@@ -97,7 +97,7 @@
 		left: 260px;
 		top: 180px;
 		text-align: center;
-		background: rgba(159,153,153,0.5);
+		background:rgba(171,200,205,0.50);
 	}
 	h3{
 		font-family: "华文楷体";
@@ -111,16 +111,8 @@
 	p{
 		font-family: "楷体";
 		font-size: 18px;
+		line-height: 24px;
 		text-align: left;
-	}
-	#logo{
-		position: absolute;
-		float: left;
-		left: 0;
-		bottom: 0;
-		width: auto;
-		height: auto;
-		background-size:cover;
 	}
 	#back{
 		position: absolute;
@@ -129,14 +121,15 @@
 		right: 100px;
 		width: auto;
 		height: auto;
-		background-color:rgba(139,133,133,1.00);
+		background-color:rgba(133,133,133,0.30);
 		font-family: "华文楷体";
 		font-size: 25px;
 		
 	}
 a:visited {color: black;} 
 a:active{color: black;}
-a:hover {font-size: 28px;} 
+a:hover {color: white;
+	font-size: 28px;} 
 a{
 		text-decoration: none;
 	}

@@ -3,27 +3,10 @@
 <head>
 <meta charset="utf-8">
 <title>诗词赏析之水调歌头</title>
-<script language="javascript"> 
-function changeColor(){ 
-var color="#C9886E|#659F7C"; 
-color=color.split("|"); 
-document.getElementById("ks1").style.color=color[parseInt(Math.random() * color.length)]; 
-} 
-setInterval("changeColor()",300); 
-</script>
+<link href="css/dhl.css" rel="stylesheet" type="text/css">
 <style type="text/css">
-	h1{
-		font-family: "华文行楷";
-		font-size: 90px;
-	}
-	h4{
-		text-align: right;
-		
-		font-family: "隶书";
-		font-size: 20px;
-	}
 #sy{
-	background:url(sc/sybg.jpg)no-repeat;
+	background:url(sc/bg.jpg)no-repeat;
 	width:1000px;
 	height:620px; 
 	margin: 0 auto;
@@ -35,7 +18,7 @@ setInterval("changeColor()",300);
 		width:445px;
 	    height: 158px;
         margin: 0 auto;
-	    top: 200px;
+	    top: 160px;
 	}
 #ks a img{
 		position: absolute;
@@ -46,30 +29,41 @@ setInterval("changeColor()",300);
 		height: auto;
 	}
 	#ks a img:hover{
-		width:200px;
-		height:140px;
+		width:130px;
+		height:92px;
 	}
-	#ks1{
+	#qp{
 		position: absolute;
 		float: right;
-		bottom:5px;
+		bottom: 90px;
 		right: 0;
-		font-size:16px;
-		font-family:"幼圆";
-		font-weight:bolder;
-		color:#000000;
+		width: auto;
+		height: auto;	
 	}
 	</style>
 </head>
 <body>
 <div id="sy">
-<div id="bt">
+<!--导航栏-->
+<div id="dh">
+<ul>
+		<li><a href="#"><img src="sc/dhl.png"></a>
+		<ul>
+		<li><a href="index.html"><img src="sc/syd.png"></a></li>
+		<li><a href="ml.html"><img src="sc/mld.png"></a></li>
+		<li><a href="introduce.html"><img src="sc/jsd.png"></a></li>
+		<li><a href="dbz.html"><img src="sc/dbzd.png"></a></li>
+		<li><a href="practice.html"><img src="sc/lxd.png"></a></li>
+		<li><a href="tz.html"><img src="sc/tzd.png"></a></li>
+		</ul></li>
+		</ul>
 </div>
-	<div id="ks">
-	<a href="ml.html"><img src="sc/ks.png"></a>
-	<div id="ks1">
-	点我点我！
+<!--导航栏-->
+<div id="qp">
+	  <img src="sc/qip.png">
 	</div>
+	<div id="ks">
+		<a href="ml.html"><img src="sc/ks.png"></a>
 	</div>
 	</div>
 </body>

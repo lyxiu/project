@@ -2,8 +2,8 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>practice</title>
-
+<title>练习</title>
+<link href="css/dhl.css" rel="stylesheet" type="text/css">
 <style type="text/css">
 
 	body{
@@ -15,13 +15,13 @@
 	    width: 1000px;
 		margin: 0 auto;
 		position: relative;
-		background-image:url(images/z004.png);
+		background-image:url(sc/z004.jpg);
 	    background-position: 1000px 620px;
 	}
 	#d2{
-		width: 900px;
+		width: 850px;
 		height: 620px;
-		margin: 0 auto;
+		left: 70px;
 		position: relative;
 	}
 	#title{
@@ -68,11 +68,9 @@
 	}
 	#mulu{
 		float: right;
-		width: 100px;
-		background-color: darkgray;
-		border: solid;
-		border-color: dimgrey;
-		color: black;
+		width: 120px;
+		background-color:rgba(133,133,133,0.30);
+		
 	}
 	#mulu:hover{
 		width: 150px;
@@ -92,14 +90,29 @@
 <body>
 
 	<div id="d1">
+		<!--导航栏-->
+<div id="dh">
+<ul>
+		<li><a href="#"><img src="sc/dhl.png"></a>
+		<ul>
+		<li><a href="index.html"><img src="sc/syd.png"></a></li>
+		<li><a href="ml.html"><img src="sc/mld.png"></a></li>
+		<li><a href="introduce.html"><img src="sc/jsd.png"></a></li>
+		<li><a href="dbz.html"><img src="sc/dbzd.png"></a></li>
+		<li><a href="practice.html"><img src="sc/lxd.png"></a></li>
+		<li><a href="tz.html"><img src="sc/tzd.png"></a></li>
+		</ul></li>
+		</ul>
+</div>
+<!--导航栏-->
 		<div id="d2">
-			<div id="title"><img src="images/z14.png"></div>
+			<div id="title"><img src="sc/z14.png"></div>
 			<div id="d3">
-			<a href="judge.html" title="判断题" id="list01"><img src="images/z11.png"></a>
-			<a href="fillin.html" title="填空题" id="list02"><img src="images/z12.png"></a>
-			<a href="cultural.html" title="文化常识" id="list03"><img src="images/z13.png"></a>
+			<a href="judge.html" title="判断题" id="list01"><img src="sc/z11.png"></a>
+			<a href="fillin.html" title="填空题" id="list02"><img src="sc/z12.png"></a>
+			<a href="cultural.html" title="文化常识" id="list03"><img src="sc/z13.png"></a>
 			</div>
-			<div id="fanhui"><img src="images/ks.png" class="mini"><div id="mulu"><a href="ml.html" title="return">返回目录</a></div></div>
+			<div id="fanhui"><img src="sc/ks.png" class="mini"><div id="mulu"><a href="ml.html" title="return">返回目录</a></div></div>
 		</div>
     </div>
 

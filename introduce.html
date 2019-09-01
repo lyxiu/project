@@ -2,112 +2,124 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>introduce</title>
+<title>水调歌头-由来</title>
+<link href="css/dhl.css" rel="stylesheet" type="text/css">
 <style type="text/css">
 	body{
 		margin: 0;
 		padding: 0;
 	}
-	#all{
-		width: 1000px;
-		height: 620px;
-		margin: 0 auto;
-		background-image: url(images/jieshao.png);
-		background-position:right bottom;
-		background-repeat: no-repeat;
-		background-size: contain;
+	#cd{
+	background:url(sc/z07.jpg) no-repeat;
+	background-position:center;
+	width:1000px;
+	height:620px; 
+	margin: 0 auto;
+	position:relative;
 	}
-	#row1{
-		float: left;
-		position:fixed;
-		bottom: 10%;
-		width: 200px;
-		height: 80px;
-		background-color:#868686;
-		
+	
+	#title{
+	width:600px;
+	height: 40px;
+	top: 30px;
+	margin: 0 auto;
+	position:relative;
+	text-align: center;
 	}
-	.text{
-		float: right;
-		width: 150px;
-		height: 40px;
-		text-align: center;
-		font-size: 25px;
-		line-height: 35px;
-		margin-top: 5px;
+#title ul{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	list-style-type: none;
 	}
-	.row2{
-		width: 800px;
-		height: 50px;
-		position: relative;
-		margin: auto;
-		margin-top: 5%;
-		text-align: center;
-		font-size: 30px;
-		display: block;
-		border-bottom:solid;
-		border-bottom-color:#837575;
-		margin-bottom: 40px;
+#title ul li{
+	width: 100px;
+	line-height: 35px;
+	list-style: none;
+	display: inline-block;
 	}
+#title ul li a{
+	color: #51535B;
+	font-family: "华文楷体";
+	font-size: 32px;
+	text-decoration: none;	
+	}
+#title ul li a:hover
+{
+	color:rgba(180,114,115,1.00);
+}
+
 	#content{
 		width: 800px;
-		height: 500px;
+		height: 450px;
+		top: 50px;
 		margin: auto;
 		overflow-y: auto;
 		font-size: 20px;
 		font-family:"楷体";
 		line-height: 30px;
+		position: relative;
+		background:rgba(236,254,255,0.50);
 	}
-	.xiongmao{
-		margin-bottom: -7px;
+	#fanhui{
+		width: 250px;
+		height: 30px;
+		position: absolute;
+		bottom: 5%;
+		right: 0;
+		font-size: 25px;
+		text-align: center;
+		float: right;
+		font-size: 25px;
+		line-height: 35px;
 	}
 	.mini{
 		width: 30%;
-		float: left;
-		margin-bottom: -15px;
+		margin-bottom: -7px;
 	}
-	#r01{
-		width: 100px;
-		position:absolute;
-		left: 10%;
+	#mulu{
+		float: right;
+		width: 120px;
+		background-color:rgba(133,133,133,0.30);
 	}
-	#r02{
+	#mulu:hover{
 		width: 150px;
-		position:absolute;
-		left: 27%;
-	}
-	#r03{
-		width: 100px;
-		position:absolute;
-		left: 50%;
-	}
-	#r04{
-		width: 100px;
-		position:absolute;
-		left: 70%;
 	}
 	a{text-decoration: none;}
-	a:link {color:#000000;}      /* 未访问链接*/
-	a:visited {color:#000000;}  /* 已访问链接 */
-	a:hover {color:#644B3D; font-size: 35px;}  /* 鼠标移动到链接上 */
-	a:active {color:#644B3D;} 
+	#mulu a:link {color:#000000;}      /* 未访问链接*/
+	#mulu a:visited {color:#000000;}  /* 已访问链接 */
+	#mulu a:hover {color:#FFFFFF;
+				   width: 150px;}  /* 鼠标移动到链接上 */
+	#mulu a:active {color:#FFFFFF;} 
+	
 </style>
 </head>
 
 <body>
 
-   <div id="all">
-    <div id="row1">
-             <div class="text" onClick="location.href='introduce.html'"><div class="xiongmao"><img src="images/ks.png" class="mini"></div>由来</div>
-             <div class="text" onClick="location.href='rules.html'"><div class="xiongmao"><img src="images/ks.png" class="mini"></div>格律</div>
-
-    </div>
-
-<div class="row2">
-         <div id="r01"><a href="introduce.html" title="介绍">介绍</a></div>
-          <div id="r02"><a href="dbz.html" title="代表作">代表作</a></div>
-          <div id="r03"><a href="practice.html" title="练习">练习</a></div>
-          <div id="r04"><a href="tz.html" title="拓展">拓展</a></div>
+<div id="cd">
+<!--导航栏-->
+<div id="dh">
+<ul>
+		<li><a href="#"><img src="sc/dhl.png"></a>
+		<ul>
+		<li><a href="index.html"><img src="sc/syd.png"></a></li>
+		<li><a href="ml.html"><img src="sc/mld.png"></a></li>
+		<li><a href="introduce.html"><img src="sc/jsd.png"></a></li>
+		<li><a href="dbz.html"><img src="sc/dbzd.png"></a></li>
+		<li><a href="practice.html"><img src="sc/lxd.png"></a></li>
+		<li><a href="tz.html"><img src="sc/tzd.png"></a></li>
+		</ul></li>
+		</ul>
 </div>
+<!--导航栏-->
+    <div id="title">
+    <ul>
+   	 	<li><a href="introduce.html">由来</a></li>
+		<li><a href="rules.html">格律</a></li>
+		<li><a href="cipaiming.html">词牌名</a></li>
+    </ul>
+    </div>
 
 	<div id="content">
 		<p>&nbsp;&nbsp;&nbsp;&nbsp;“水调歌头”词调来源于《水调》曲。</p>
@@ -154,6 +166,7 @@
 		
 		<p>&nbsp;&nbsp;&nbsp;&nbsp;“水调歌头”一调，有不同异名。毛滂词名《元会曲》，张矩词名《凯歌》，吴文英词《江南好》，贺铸词名《台城游》，汪相如词名《水调歌》，姜夔词名《花犯念奴》，明杨慎词名《花犯》。</p>
 	</div>
+	<div id="fanhui"><img src="sc/ks.png" class="mini"><div id="mulu"><a href="ml.html">返回目录</a></div></div>
 </div>
 
 
