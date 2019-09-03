@@ -19,7 +19,7 @@ body{
 }
 h1{
 	text-align:center;
-	font-family:"方正舒体";
+	font-family:"华文楷体";
 	font-size: 50px;
 	-webkit-transition: all;
 	-moz-transition: all;
@@ -43,7 +43,7 @@ width:150px;
 height:50px;
 background:#C8DFE0;
 color:#000000;
-font-family:"方正舒体";
+font-family:"华文楷体";
 margin:15px 10px;
 font-size:40px;
 display:block;
@@ -85,7 +85,74 @@ text-decoration:none;
 		text-decoration: none;
 		color: black;
 	}
-</style>
+	#sr{
+		position: absolute;
+		left: 50px;
+		bottom: 0%;
+		width: 100px;
+	}
+	#qp{
+		position: absolute;
+		left: 130px;
+		top: 6%;
+		width: 300px;
+		height: 300px;
+	}
+	#wz1{
+		position: absolute;
+		left: 125px;
+		top: 130px;
+		font-family:"华文楷体";
+		font-size: 17px;
+		width: 100px;
+		height: 60px;
+	}#wz2{
+		position: absolute;
+		left: 125px;
+		top: 130px;
+		font-family:"华文楷体";
+		font-size: 17px;
+		width: 100px;
+		height: 60px;display: none;
+	}#wz3{
+		position: absolute;
+		left: 125px;
+		top: 130px;
+		font-family:"华文楷体";
+		font-size: 17px;
+		width: 100px;
+		height: 60px;display: none;
+	}#wz4{
+		position: absolute;
+		left: 125px;
+		top: 130px;
+		font-family:"华文楷体";
+		font-size: 17px;
+		width: 100px;
+		height: 60px;display: none;
+	}
+	#ts{
+		position: absolute;
+		left:30px;
+		top:370px;
+		width: 80px;
+		font-family: "华文楷体";
+		font-size: 13px;
+	}
+</style><script src="js/jquery.min.js"> </script>
+	<script>var i = 1;
+$(document).ready(function() {
+    $("#sr").click(function(){
+		if(i==1){$("#wz1").css("display","none");
+		$("#wz2").fadeIn();
+			i++;
+		}else if(i==2){$("#wz2").css("display","none");
+		$("#wz3").fadeIn();i++;}
+		else if(i==3){$("#wz3").css("display","none");
+		$("#wz4").fadeIn();}
+	});
+});
+	</script>
 </head>
 
 <body>
@@ -98,7 +165,7 @@ text-decoration:none;
 		<li><a href="index.html"><img src="sc/syd.png"></a></li>
 		<li><a href="ml.html"><img src="sc/mld.png"></a></li>
 		<li><a href="introduce.html"><img src="sc/jsd.png"></a></li>
-		<li><a href="dbz.html"><img src="sc/dbzd.png"></a></li>
+		<li><a href="dbzml.html"><img src="sc/dbzd.png"></a></li>
 		<li><a href="practice.html"><img src="sc/lxd.png"></a></li>
 		<li><a href="tz.html"><img src="sc/tzd.png"></a></li>
 		</ul></li>
@@ -119,6 +186,15 @@ text-decoration:none;
 </ul>
 </div>
 </aside>
+<div id="sr"><img src="sc/sr.png" height="400px"></div>
+	<div id="qp">
+		<img src="sc/qp.png" width="350px" height="300px">
+		<div id="wz1">想进一步了解词与词牌名吗？</div>
+		<div id="wz2">点击"词"进入词的拓展知识</div>
+		<div id="wz3">点击"词牌"能更多了解词牌名哦</div>
+		<div id="wz4">开始学习吧！</div>
+	</div>
+	<div id="ts">小提示：点击诗人可与诗人对话哦</div>
 </div>
 </body>
 </html>

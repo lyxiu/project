@@ -8,6 +8,7 @@
 	body{
 		margin: 0;
 		padding: 0;
+		font-family:'华文楷体';
 	}
 	#cd{
 	background:url(sc/z07.jpg) no-repeat;
@@ -18,46 +19,50 @@
 	position:relative;
 	}
 	
-	#title{
-	width:600px;
-	height: 40px;
-	top: 30px;
-	margin: 0 auto;
-	position:relative;
-	text-align: center;
+	#youlai{
+		width：200px;
+		left: 100px;
+		top: 300px;
+		position: absolute;
 	}
-#title ul{
-	margin: 0;
-	padding: 0;
-	text-align: center;
-	list-style-type: none;
+	#gelv{
+		width：200px;
+		left: 370px;
+		top: 300px;
+		position:absolute;
 	}
-#title ul li{
-	width: 100px;
-	line-height: 35px;
-	list-style: none;
-	display: inline-block;
+	#cipaiming{
+		width：200px;
+		right: 100px;
+		top: 300px;
+		position:absolute;
 	}
-#title ul li a{
-	color: #51535B;
-	font-family: "华文楷体";
-	font-size: 32px;
-	text-decoration: none;	
-	}
-#title ul li a:hover
-{
-	color:rgba(180,114,115,1.00);
-}
-
-	#content{
+	#content1{
 		width: 800px;
 		height: 450px;
-		top: 50px;
+		top: 80px;
 		margin: auto;
 		overflow-y: auto;
 		font-size: 20px;
-		font-family:"楷体";
 		line-height: 30px;
+		position: relative;
+		background:rgba(236,254,255,0.50);
+	}
+	#content2{
+		width: 800px;
+		height: 450px;
+		top: 80px;
+		margin: auto;
+		overflow-y: auto;
+		font-size: 20px;
+		line-height: 30px;
+		position: relative;
+		background:rgba(236,254,255,0.50);
+	}
+	#content3{
+		width: 800px;
+		top: 80px;
+		left: 100px;
 		position: relative;
 		background:rgba(236,254,255,0.50);
 	}
@@ -77,6 +82,20 @@
 		width: 30%;
 		margin-bottom: -7px;
 	}
+	#return{
+		float: right;
+		width: 120px;
+		background-color:rgba(133,133,133,0.30);
+	}
+	#return:hover{
+		width: 150px;
+	}
+	a{text-decoration: none;}
+	#return a:link {color:#000000;}      /* 未访问链接*/
+	#return a:visited {color:#000000;}  /* 已访问链接 */
+	#return a:hover {color:#FFFFFF;
+				   width: 150px;}  /* 鼠标移动到链接上 */
+	#return a:active {color:#FFFFFF;} 
 	#mulu{
 		float: right;
 		width: 120px;
@@ -93,6 +112,63 @@
 	#mulu a:active {color:#FFFFFF;} 
 	
 </style>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script>
+	$(document).ready(function () {
+		$("#content1").css("display","none");
+		$("#content2").css("display","none");
+		$("#content3").css("display","none");
+		$("#return").css("display","none");
+		$("#mulu").css("display","block");
+        $("#tt").css("display","block");
+		
+		
+		$("#return").click(function () {
+        $("#tt").css("display","block");
+		$("#mulu").css("display","block");
+		$("#return").css("display","none");
+        $("#content1").css("display","none");
+		$("#content2").css("display","none");
+		$("#content3").css("display","none");
+    });
+		
+    $("#youlai").click(function () {
+        $("#content1").css("display","block");
+		$("#return").css("display","block");
+        $("#tt").css("display","none");
+		$("#mulu").css("display","none");
+		$("#content2").css("display","none");
+		$("#content3").css("display","none");
+    });
+		
+	$("#gelv").click(function () {
+        $("#content2").css("display","block");
+        $("#return").css("display","block");
+        $("#tt").css("display","none");
+		$("#mulu").css("display","none");
+		$("#content1").css("display","none");
+		$("#content3").css("display","none");
+    });
+		
+	$("#cipaiming").click(function () {
+        $("#content3").css("display","block");
+        $("#return").css("display","block");
+        $("#tt").css("display","none");
+		$("#mulu").css("display","none");
+		$("#content1").css("display","none");
+		$("#content2").css("display","none");
+    });
+		
+
+
+});
+
+
+
+</script>
+
+
 </head>
 
 <body>
@@ -106,22 +182,20 @@
 		<li><a href="index.html"><img src="sc/syd.png"></a></li>
 		<li><a href="ml.html"><img src="sc/mld.png"></a></li>
 		<li><a href="introduce.html"><img src="sc/jsd.png"></a></li>
-		<li><a href="dbz.html"><img src="sc/dbzd.png"></a></li>
+		<li><a href="dbzml.html"><img src="sc/dbzd.png"></a></li>
 		<li><a href="practice.html"><img src="sc/lxd.png"></a></li>
 		<li><a href="tz.html"><img src="sc/tzd.png"></a></li>
 		</ul></li>
 		</ul>
 </div>
 <!--导航栏-->
-    <div id="title">
-    <ul>
-   	 	<li><a href="introduce.html">由来</a></li>
-		<li><a href="rules.html">格律</a></li>
-		<li><a href="cipaiming.html">词牌名</a></li>
-    </ul>
-    </div>
-
-	<div id="content">
+	<div id="tt">
+    <div><a href="#" id="youlai"><img src="sc/youlai.png"></a></div>
+    <div><a href="#" id="gelv"><img src="sc/gelv.png"></a></div>
+    <div><a href="#" id="cipaiming"><img src="sc/cipaiming.png"></a></div>
+	</div>
+	
+	<div id="content1">
 		<p>&nbsp;&nbsp;&nbsp;&nbsp;“水调歌头”词调来源于《水调》曲。</p>
 
 		<p>&nbsp;&nbsp;&nbsp;&nbsp;《水调》曲，为隋炀帝所制。唐刘餗《隋唐嘉话》说：“炀帝凿汴河，自制《水调歌》。”</p>
@@ -166,7 +240,38 @@
 		
 		<p>&nbsp;&nbsp;&nbsp;&nbsp;“水调歌头”一调，有不同异名。毛滂词名《元会曲》，张矩词名《凯歌》，吴文英词《江南好》，贺铸词名《台城游》，汪相如词名《水调歌》，姜夔词名《花犯念奴》，明杨慎词名《花犯》。</p>
 	</div>
-	<div id="fanhui"><img src="sc/ks.png" class="mini"><div id="mulu"><a href="ml.html">返回目录</a></div></div>
+
+	<div id="content2">
+		<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;以毛滂《元会曲·九金增宋重》为正体，双调九十五字，前段九句四平韵，后段十句四平韵。另有双调九十五字，前段九句四平韵、两仄韵，后段十句四平韵、两仄韵；双调九十五字，前段九句四平韵、五叶韵，后段十句四平韵、五叶韵等变体。
+		</p>
+		
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;正体，双调九十五字，前段九句四平韵，后段十句四平韵。以毛滂《元会曲·九金增宋重》为代表。此调以此词及周词、苏词为正体，若贺词之偷声，王词、刘词之添字，傅词之减字，皆变体也。 此词前后段不间入仄韵，宋词俱如此填。其前段第三、四句，后段第四、五句，俱四字一句、七字一句，其七字句并作拗体。惟葛郯词“翠光千顷，为谁来去为谁留”、“跳珠翻沫，轰雷掣电几时收”，吕渭老词“醉魂何在，应骑箕尾到青天”、“黄粱未熟，经游都在梦魂间”，刘过词“日高花困，海棠风暖想都开”，“人生行乐，且须痛饮莫辞杯”，“谁”字、“雷”字、“骑”字、“游”字、“棠”字、“须”字俱平声，与此异。 又前段起句，毛词别首“金马空故事”，辛弃疾词“四坐且勿语”，叶梦得词“修眉扫遥碧”。换头三句，毛词别首“双石健，含古色，照新堂”，“石”字、“古”字俱仄声。苏轼词“众鸟里，真彩凤，独不鸣”，“彩”字、“不”字俱仄声。辛词“回首处，云正出，鸟倦飞”，“首”字、“正”字、“倦”字俱仄声，俱与此词异。</p>
+		
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;变体一，双调九十五字，前段九句四平韵，后段十句四平韵。以周紫芝《水调歌头·丙午登白鹭亭作》为代表。此词前段第三句六字，第四句五字，后段第四句六字，第五句五字，与毛词异。 按苏轼词“中年亲友离别，丝竹缓离忧”、“故乡归去千里，佳处辄迟留”，叶梦得词“倚空千嶂横起，银阙正当中”、“遥知玉斧初斲，重到广寒宫”，正与此同。宋词如吴文英、刘克庄、方岳，金元词如蔡松年、王庭筠、元好问、赵孟頫，皆如此填。</p>
+		
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;变体二，双调九十五字，前段九句四平韵、两仄韵，后段十句四平韵、两仄韵。以苏轼《水调歌头·明月几时有》为代表。此词前段第五、六句，后段第六、七句，间入两仄韵。 按刘仲芳词“极目平沙千里，惟见雕弓白羽”、“堂有经纶贤相，边有纵横谋将”。叶梦得词“分付平云千里，包卷骚人遗思”、“却叹从来贤士，如我与公多矣”。辛弃疾词“好卷垂虹千尺，只放冰壶一色”、“寄语烟波旧侣，闻道蒪鲈正美”。段克己词“神既来兮庭宇，飒飒西风吹雨”、“风外渊渊箫鼓，醉饱满城黎庶”，正与此同。但叶梦得词“里”、“思”、“士”、“矣”，段克己词“宇”、“雨”、“鼓”、“庶”，前后段同一韵，与此词前后各韵者又微有别。此外，又有前段第五、六句押仄韵，后段不押者，或有后段第六、七句押仄韵，前段不押者，此则偶合，不复分体。</p>
+		
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;变体三，双调九十五字，前段九句四平韵、五叶韵，后段十句四平韵、五叶韵。以贺铸《台城游·南国本潇洒》为代表。此词第一句押韵，以平韵为主，其仄韵，即用本部麻、马、祃三声叶，间入平韵之内。宋人只此一体，并无别首可校。若其前段第三、四句，后段第五、六句俱作四字一句、七字一句，则与毛词同，但不作拗体耳。</p>
+		
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;变体四，双调九十七字，前后段各十句、四平韵。以王之道《水调歌头·斜阳明薄暮》为代表。此与毛词同，惟前段毛词第四句系七字，此则添二字作四字、五字两句异。</p>
+		
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;变体五，双调九十七字，前段九句四平韵，后段十一句四平韵。以张孝祥《水调歌头·雪洗卤尘净》为代表。此与周词同，惟后段周词第四句系六字，此则添二字作四字两句异。</p>
+		
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;变体六，双调九十六字，前段九句四平韵，后段十句四平韵。以刘因《水调歌头·一诺与金重》为代表。此与周词同，惟后段第五句添一字作六字折腰句法异。</p>
+		
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;变体七，双调九十四字，前后段各九句、四平韵。以傅公谋《水调歌头·草草三间屋》为代表。此与毛词同，惟后段第一、二句减一字作五字句异。</p>
+	</div>
+
+	<div>
+		<video controls preload="metadata" playsinline="playsinline" webkit-playsinline="webkit-playsinline" id="content3" src="https://vdse.bdstatic.com//de5663abbbec668db03043731bc28091?authorization=bce-auth-v1%2F40f207e648424f47b2e3dfbb1014b1a5%2F2017-05-11T09%3A02%3A31Z%2F-1%2F%2F627134c30f6a0a297e7cf9e43b2b2d1bad5ead1394c9d2c36228a7195bf3ad55" poster="https://img.idongde.com/upload/content/images/1539768179548280.jpg">Sorry, your browser does not support embedded videos.</video>
+	</div>
+
+	<div id="fanhui">
+		<img src="sc/ks.png" class="mini">
+		<div id="return"><a href="#">返回</a></div>
+		<div id="mulu"><a href="ml.html">返回目录</a></div>
+	</div>
 </div>
 
 
