@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document */
+#c2{
+	top: 150px;
+	float: left;
+	left: 15px;
+	position:relative;
+	text-align: center;
+	background:rgba(171,200,205,0.30);
+	}
+#c2 ul{
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	list-style-type: none;
+	}
+#c2 ul li{
+	line-height: 38px;
+	text-align: center;
+	}
+#c2 ul li a{
+	color: black;
+	font-family: "华文楷体";
+	font-size: 20px;
+	text-decoration: none;	
+	}
+#c3{
+	height: 30px;
+	left: 160px;
+	top: 60px;
+	position:relative;
+	text-align: center;
+	
+	}
+#c3 ul{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	list-style-type: none;
+	}
+#c3 ul li{
+	width: 100px;
+	line-height: 30px;
+	border:1px solid  rgba(134,130,130,0.54);
+	float: left;
+	text-align: center;
+	}
+#c3 ul li a{
+	color:black;
+	font-family: "华文楷体";
+	font-size: 28px;
+	text-decoration: none;	
+	}
+	#c4{
+		width: 600px;
+		position: absolute;
+		right: 140px;
+		top: 150px;
+		text-align: center;
+		background:rgba(171,200,205,0.50);
+	}
+	h3{
+		font-family: "华文楷体";
+		font-size: 22px;
+	}
+	#p1{
+		font-family: "华文楷体";
+		font-size: 20px;
+		text-align: center;
+	}
+	p{
+		font-family: "楷体";
+		font-size: 18px;
+		line-height: 28px;
+		text-align: left;
+	}
+	#back{
+		position: absolute;
+		float: right;
+		bottom:60px;
+		right: 20px;
+		width: auto;
+		height: auto;
+		background-color:rgba(133,133,133,0.30);
+		font-family: "华文楷体";
+		font-size: 25px;
+		
+	}
+	
+	#back a:link {color:#000000;}      /* 未访问链接*/
+	
+a:visited {color: black;} 
+a:active{color: black;}
+a:hover {color: white;
+	font-size: 28px;} 
+a{
+		text-decoration: none;
+	}
+
